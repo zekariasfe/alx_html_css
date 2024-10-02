@@ -1,0 +1,384 @@
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("source-sans-pro/Sourcesanspro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Spin-Cycle-OT";
+  src: url("Spin-Cycle-OT /spincycle_ot.otf") format("opentype");
+}
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  line-height: 1.6;
+  color: white;
+  font-family: "CustomFont", sans-serif;
+}
+/* nav starts */
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: transparent;
+  align-items: center;
+  position: absolute;
+  padding: 20px 100px;
+  z-index: 5;
+  font-family: "source-sans-pro";
+}
+
+.logo {
+  width: 130px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+nav ul li {
+  font-size: 10px;
+}
+/* nav ends */
+
+/* Hero section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url("./images/Object.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "source-sans-pro";
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.hero h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.hero > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 10px;
+  margin-top: -18px;
+}
+
+.button button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 10px;
+  background-color: #c271ff;
+  color: white;
+  border: 0;
+  margin-top: 30px;
+  font-family: "source-sans-pro";
+}
+/* hero section ends */
+
+/* Learn from the pros section */
+.learn-section {
+  position: relative;
+  z-index: 5;
+  margin-top: 50px;
+}
+
+.learn-section h2 {
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+.learn {
+  color: #c271ff;
+}
+
+.pros {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.pro-item {
+  text-align: center;
+}
+
+.pro-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.pro-item h3 {
+  margin-top: 10px;
+  font-size: small;
+  font-weight: bold;
+}
+
+.pro-item p {
+  font-size: 12px;
+  color: #ddd;
+}
+/* learn from the pro section ends */
+
+/* Tutorials start */
+#tutorials {
+  height: 100vh;
+  font-family: "source-sans-pro";
+}
+/* tutorials-top starts */
+.tutorials-top {
+  display: flex;
+  align-items: center;
+  background-color: #c271ff;
+  padding: 50px 200px;
+  gap: 30px;
+}
+.tutorials-top img {
+  width: 120px;
+}
+
+.person-name {
+  font-size: 14px;
+}
+
+blockquote {
+  margin-bottom: 5px;
+}
+.tutorials-top h3 {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.tutorials-top p {
+  margin-top: -5px;
+  font-style: italic;
+  font-weight: -100px;
+}
+/* tutorails-top ends */
+
+/* tutorials-bottom starts */
+.tutorials-bottom {
+  padding: 60px 60px;
+}
+.tutorials-bottom h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  color: black;
+  text-align: center;
+}
+.popular {
+  color: #c271ff;
+  font-weight: bold;
+}
+.most-popular {
+  display: flex;
+  justify-content: center;
+  color: black;
+  gap: 30px;
+  padding: 0 50px;
+}
+.diagonal {
+  padding: 5px;
+}
+
+.diagonal img {
+  width: 100%;
+}
+.diagonal h3 {
+  font-size: 13px;
+  font-weight: bold;
+  color: #071629;
+  margin-bottom: 5px;
+}
+.diagonal P {
+  font-size: 10px;
+  color: gray;
+}
+.username {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.username h4 {
+  color: #c271ff;
+  font-weight: bold;
+}
+.username img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.rating p {
+  color: #c271ff;
+  font-size: 12px;
+}
+
+.left-pad {
+  padding: 0 10px;
+}
+/* tutorials-bottom ends */
+/* Tutorials end */
+
+/* free-membership start */
+#free-membership {
+  height: 65vh;
+  background-color: #071629;
+  font-family: "source-sans-pro";
+}
+#free-membership h2 {
+  padding: 50px 50px;
+  text-align: center;
+  font-size: 35px;
+}
+.free {
+  color: #c271ff;
+}
+
+.smile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.smile img {
+  width: 30px;
+  margin-bottom: 20px;
+}
+
+.smile p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.membership {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.membership h2 {
+  text-align: center;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* FAQ starts here */
+#FAQ {
+  color: #071629;
+  padding: 50px 200px;
+  font-family: "source-sans-pro";
+}
+#FAQ h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+.FAQ-function {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 150px;
+  row-gap: 50px;
+  margin-bottom: 40px;
+}
+
+.FAQ-function h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.FAQ-function p {
+  color: gray;
+  font-size: 14px;
+}
+
+/* footer */
+
+footer {
+  background-color: #071629;
+  padding: 100px 200px 50px 200px;
+  color: white;
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 100px;
+  opacity: 0.2;
+  font-size: 14px;
+}
+
+footer > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.svg-div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer svg {
+  fill: black;
+}
+
+svg {
+  width: 12px;
+  height: 12px;
+}
