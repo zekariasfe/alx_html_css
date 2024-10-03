@@ -122,3 +122,23 @@ nav ul li {
   max-width: 55vw;
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  body.works_on_smartphone {
+    display: block;
+  }
+  body.works_on_smartphone main {
+    display: block;
+  }
+  header .right {
+    float: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styles for smaller screens */
+  body,
+  section {
+    flex-direction: column;
+  }
+}
