@@ -122,23 +122,36 @@ nav ul li {
   max-width: 55vw;
   text-align: center;
 }
-
-@media (max-width: 800px) {
-  body.works_on_smartphone {
-    display: block;
-  }
-  body.works_on_smartphone main {
-    display: block;
-  }
-  header .right {
-    float: none;
-  }
+.hamburger {
+  display: none;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   /* Styles for smaller screens */
-  body,
+  body {
+    font-size: 14px;
+  }
+  nav ul li {
+    display: none;
+  }
   section {
     flex-direction: column;
+  }
+  .hamburger {
+    display: block;
+    align-items: left;
+
+    position: relative;
+  }
+
+  .hero-description {
+    text-align: center;
+    padding-left: 0;
+    align-items: center;
+    background-position: center center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    margin-right: 150px;
   }
 }
