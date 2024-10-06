@@ -385,6 +385,7 @@ h4 {
   font-family: "source-sans-pro";
   font-weight: bold;
   margin-top: 5%;
+  color: white;
 }
 .our-description {
   text-align: center;
@@ -480,7 +481,7 @@ h4 {
 
  
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   width: 335px;
   border: 1px solid #00f;
   border-radius: 8px;
