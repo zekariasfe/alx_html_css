@@ -1,0 +1,368 @@
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("source-sans-pro/Sourcesanspro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Spin-Cycle-OT";
+  src: url("Spin-Cycle-OT /spincycle_ot.otf") format("opentype");
+}
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  line-height: 1.6;
+  color: white;
+  font-family: "CustomFont", sans-serif;
+}
+
+/* nav starts */
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: transparent;
+  align-items: center;
+  position: absolute;
+  padding: 20px 100px;
+  z-index: 5;
+  font-family: "source-sans-pro";
+}
+
+.logo {
+  width: 130px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+nav ul li {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "source-sans-pro";
+}
+/* nav ends */
+
+/* Hero section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url("./images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "source-sans-pro";
+}
+.hero-title {
+  font-size: 32px;
+  font-family: "source-sans-pro";
+  font-weight: bold;
+}
+.hero-subtitle {
+  font-size: 16px;
+  font-family: "source-sans-pro";
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.hero h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.hero > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 10px;
+  margin-top: -18px;
+}
+
+.btn {
+  margin-bottom: 3rem;
+}
+
+.hero-button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  background-color: #ff6565;
+  color: white;
+  border: 0;
+  margin-top: 30px;
+  font-family: "source-sans-pro";
+  font-weight: bold;
+  width: 162px;
+  height: 44px;
+}
+
+.hero-description {
+  justify-content: center;
+  align-items: center;
+  max-width: 55vw;
+  text-align: center;
+}
+
+#what_we_do,
+.outer-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#what_we_do h1,
+h4 {
+  color: black;
+  font-size: 2rem;
+}
+
+#what_we_do .text_p1 {
+  color: rgb(85, 85, 85);
+}
+
+.inner-details-container {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.details-container {
+  text-align: center;
+  padding: 1rem;
+  flex: 1;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.img-container {
+  width: 90%;
+  margin-bottom: 1.7rem;
+}
+
+.details-container p {
+  font-size: 0.8rem;
+  color: black;
+}
+
+.video_image {
+  margin-bottom: 1rem;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Hide the regular menu items */
+  nav ul li {
+    display: none;
+  }
+
+  /* Display the hamburger menu */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
+  /* Center the logo */
+  .logo {
+    margin: 0 auto;
+    position: relative;
+    left: -20px;
+  }
+
+  /* Flex the nav for the hamburger and logo layout */
+  nav {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .hero-description {
+    text-align: center;
+    padding-left: 0;
+    align-items: center;
+    background-position: center center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Show a vertical menu when the hamburger is clicked (you can handle the toggle with JS) */
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  /* Open state for the hamburger menu */
+  .hamburger-menu.open {
+    display: flex;
+  }
+
+  .hamburger-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  /* Adjust logo size for smaller screens */
+  .logo {
+    width: 100px;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  /* Navigation */
+  nav {
+    padding: 20px 50px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  nav ul li {
+    font-size: 10px;
+  }
+
+  /* Hero Section */
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+  }
+
+  .hero ul {
+    gap: 30px;
+  }
+
+  .hero-button {
+    font-size: 12px;
+    width: 140px;
+    height: 40px;
+  }
+
+  .hero-description {
+    max-width: 65vw;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .hero {
+    margin-top: 50px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-button {
+    font-size: 12px;
+    padding: 8px 10px;
+    width: 120px;
+    height: 35px;
+  }
+
+  .hero-description {
+    max-width: 75vw;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 5px 15px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  nav ul li {
+    font-size: 8px;
+  }
+
+  .hero-title {
+    font-size: 20px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero-button {
+    font-size: 10px;
+    padding: 6px 8px;
+    width: 100px;
+    height: 30px;
+  }
+
+  .hero-description {
+    max-width: 85vw;
+  }
+}
